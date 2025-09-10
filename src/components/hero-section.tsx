@@ -19,7 +19,8 @@ export function HeroSection() {
                 <span className="gradient-text">Yaswanth Jemudugani</span>
               </h1>
               <h2 className="text-xl md:text-2xl text-muted-foreground">
-                DevOps Engineer – Technology | <span className="text-primary">Hyderabad, India</span>
+                DevOps Engineer – Technology<br />
+                <span className="text-primary">Hyderabad, India</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
                 Automating Infrastructure | Scaling Deployments | Boosting Productivity with{" "}
