@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91-97037xxxxx",
+    value: "+91-97037XXXXX",
     href: null // disable direct click
   },
   {
