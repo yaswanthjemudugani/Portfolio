@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import devopsIllustration from "@/assets/devops-illustration.png"
+const devopsIllustration = "/lovable-uploads/0235d165-6d93-4649-9b7e-79dfe6dc47bc.png"
 
 export function AboutSection() {
   return (

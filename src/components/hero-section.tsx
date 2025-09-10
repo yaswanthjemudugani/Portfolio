@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Mail, Linkedin, Github, Download } from "lucide-react"
-import yaswanthProfile from "@/assets/yaswanth-profile.png"
+const yaswanthProfile = "/lovable-uploads/210041f1-4e3f-4bd5-ba65-e0ef59a44fb8.png"
 
 export function HeroSection() {
   const handleDownloadResume = () => {
