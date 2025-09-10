@@ -18,8 +18,8 @@ All colors MUST be HSL. Supporting Dark, Light, and System themes.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
     
-    /* Teal & Emerald Professional Accents */
-    --primary: 170 60% 45%;
+    /* Deep Blue & Purple Professional Accents */
+    --primary: 250 84% 54%;
     --primary-foreground: 0 0% 100%;
     
     --secondary: 210 20% 96%;
@@ -28,7 +28,7 @@ All colors MUST be HSL. Supporting Dark, Light, and System themes.
     --muted: 210 20% 96%;
     --muted-foreground: 215 16% 47%;
     
-    --accent: 142 76% 36%;
+    --accent: 262 83% 58%;
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
@@ -36,14 +36,14 @@ All colors MUST be HSL. Supporting Dark, Light, and System themes.
     
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 170 60% 45%;
+    --ring: 250 84% 54%;
     
     /* Custom Portfolio Colors */
-    --hero-gradient: linear-gradient(135deg, hsl(170 60% 45%), hsl(142 76% 36%));
+    --hero-gradient: linear-gradient(135deg, hsl(250 84% 54%), hsl(262 83% 58%));
     --section-bg: 210 20% 98%;
     --glass-bg: 0 0% 100% / 0.8;
-    --shadow-primary: 170 60% 45% / 0.1;
-    --glow-primary: 170 60% 45% / 0.2;
+    --shadow-primary: 250 84% 54% / 0.1;
+    --glow-primary: 250 84% 54% / 0.2;
     
     --radius: 0.75rem;
 
@@ -75,8 +75,8 @@ All colors MUST be HSL. Supporting Dark, Light, and System themes.
     --popover: 220 13% 12%;
     --popover-foreground: 0 0% 95%;
     
-    /* Cyan & Teal Tech Highlights */
-    --primary: 180 100% 50%;
+    /* Electric Blue & Violet Tech Highlights */
+    --primary: 220 91% 65%;
     --primary-foreground: 220 13% 9%;
     
     --secondary: 220 13% 15%;
@@ -85,22 +85,22 @@ All colors MUST be HSL. Supporting Dark, Light, and System themes.
     --muted: 220 13% 15%;
     --muted-foreground: 220 9% 55%;
     
-    --accent: 170 76% 42%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 270 95% 75%;
+    --accent-foreground: 220 13% 9%;
     
     --destructive: 0 75% 60%;
     --destructive-foreground: 0 0% 95%;
     
     --border: 220 13% 18%;
     --input: 220 13% 18%;
-    --ring: 180 100% 50%;
+    --ring: 220 91% 65%;
     
     /* Custom Dark Portfolio Colors */
-    --hero-gradient: linear-gradient(135deg, hsl(180 100% 50%), hsl(170 76% 42%));
+    --hero-gradient: linear-gradient(135deg, hsl(220 91% 65%), hsl(270 95% 75%));
     --section-bg: 220 13% 8%;
     --glass-bg: 220 13% 12% / 0.8;
-    --shadow-primary: 180 100% 50% / 0.2;
-    --glow-primary: 180 100% 50% / 0.3;
+    --shadow-primary: 220 91% 65% / 0.2;
+    --glow-primary: 220 91% 65% / 0.3;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
