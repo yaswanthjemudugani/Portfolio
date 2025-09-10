@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin, Linkedin, Github, Download } from "lucide-react"
@@ -13,7 +14,7 @@ const contactInfo = [
     icon: Phone,
     label: "Phone",
     value: "+91-9703714943",
-    href: "tel:+919703714943"
+    href: null // disable direct click
   },
   {
     icon: MapPin,
@@ -36,9 +37,18 @@ const contactInfo = [
 ]
 
 export function ContactSection() {
+  const [message, setMessage] = useState("")
+
   const handleDownloadResume = () => {
-    // This would typically download a resume file
-    console.log("Downloading resume...")
+    setMessage(
+      "📌 As part of security best practices, the resume download feature is disabled. Please reach out via email only."
+    )
+  }
+
+  const handlePhoneClick = () => {
+    setMessage(
+      "📌 For security reasons, direct phone number access is disabled. Please connect with me via email only."
+    )
   }
 
   return (
@@ -59,10 +69,18 @@ export function ContactSection() {
                 {/* Contact Information */}
                 <div className="space-y-6">
                   <h3 className="text-xl font-semibold gradient-text mb-6">Contact Information</h3>
-                  {contactInfo.map((contact, index) => {
+                  {contactInfo.map((contact) => {
                     const Icon = contact.icon
                     return (
-                      <div key={contact.label} className="flex items-center space-x-4 group">
+                      <div
+                        key={contact.label}
+                        className="flex items-center space-x-4 group cursor-pointer"
+                        onClick={
+                          contact.label === "Phone"
+                            ? handlePhoneClick
+                            : undefined
+                        }
+                      >
                         <div className="flex-shrink-0">
                           <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                             <Icon className="h-5 w-5 text-primary" />
@@ -116,6 +134,12 @@ export function ContactSection() {
                       Download Resume
                     </Button>
                   </div>
+
+                  {message && (
+                    <p className="mt-4 text-sm text-red-500 font-medium text-center animate-fade-in">
+                      {message}
+                    </p>
+                  )}
 
                   <div className="pt-6 border-t border-border">
                     <p className="text-sm text-muted-foreground text-center">
