@@ -12,17 +12,19 @@ export function HeroSection() {
 
   const handleDownloadResume = () => {
     setResumeMessage(
-      <>📌 As part of security best practices, the resume download feature is disabled. 
-      Please reach out via email only{" "}
-        <a
-          href="mailto:yaswanth.professional@gmail.com"
-          className="text-primary font-semibold underline"
+      <>
+        📌 As part of security best practices, the resume download feature is disabled. 
+        Please reach out via email only{" "}
+        <span
+          onClick={() => window.open("mailto:yaswanth.professional@gmail.com", "_blank")}
+          className="text-primary font-semibold underline cursor-pointer"
         >
           yaswanth.professional@gmail.com
-        </a>
+        </span>
       </>
     )
   }
+
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16">
