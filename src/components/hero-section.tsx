@@ -11,9 +11,16 @@ export function HeroSection() {
   const [resumeMessage, setResumeMessage] = useState("")
 
   const handleDownloadResume = () => {
-    // Instead of download, show message
     setResumeMessage(
-      "📌 As part of security best practices, the resume download feature is disabled. Please reach out to me via email only."
+      <>📌 As part of security best practices, the resume download feature is disabled. 
+      Please reach out via email only{" "}
+        <a
+          href="mailto:yaswanth.professional@gmail.com"
+          className="text-primary font-semibold underline"
+        >
+          yaswanth.professional@gmail.com
+        </a>
+      </>
     )
   }
 
