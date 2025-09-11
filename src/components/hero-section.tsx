@@ -2,7 +2,10 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Mail, Linkedin, Github, Download } from "lucide-react"
 
-const yaswanthProfile = "/lovable-uploads/210041f1-4e3f-4bd5-ba65-e0ef59a44fb8.png"
+// const yaswanthProfile = "/lovable-uploads/210041f1-4e3f-4bd5-ba65-e0ef59a44fb8.png"
+
+const yaswanthProfile = "/src/assets/Yaswanth-Image.jpg"
+
 
 export function HeroSection() {
   const [resumeMessage, setResumeMessage] = useState("")
@@ -10,7 +13,7 @@ export function HeroSection() {
   const handleDownloadResume = () => {
     // Instead of download, show message
     setResumeMessage(
-      "📌 As part of security best practices, the resume download feature is disabled. Please reach out via email only."
+      "📌 As part of security best practices, the resume download feature is disabled. Please reach out to me via email only."
     )
   }
 
