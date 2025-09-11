@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Globe, MapPin } from "lucide-react"
+import { ExternalLink, Globe, MapPin } from "lucide-react"
 
 const projects = [
   {
