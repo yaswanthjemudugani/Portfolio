@@ -37,17 +37,34 @@ const contactInfo = [
 ]
 
 export function ContactSection() {
-  const [message, setMessage] = useState("")
+  const [resumeMessage, setResumeMessage] = useState("")
+  const [phoneMessage, setPhoneMessage] = useState("")
 
   const handleDownloadResume = () => {
-    setMessage(
-      "📌 As part of security best practices, the resume download feature is disabled. Please reach out via email only."
+    setResumeMessage(
+      <>📌 As part of security best practices, the resume download feature is disabled. 
+      Please reach out via email only{" "}
+        <a
+          href="mailto:yaswanth.professional@gmail.com"
+          className="text-primary font-semibold underline"
+        >
+          yaswanth.professional@gmail.com
+        </a>
+      </>
     )
   }
 
   const handlePhoneClick = () => {
-    setMessage(
-      "📌 For security reasons, direct phone number access is disabled. Please connect with me via email only."
+    setPhoneMessage(
+      <>📌 For security reasons, direct phone number access is disabled. 
+      Please connect with me via email only{" "}
+        <a
+          href="mailto:yaswanth.professional@gmail.com"
+          className="text-primary font-semibold underline"
+        >
+          yaswanth.professional@gmail.com
+        </a>
+      </>
     )
   }
 
@@ -72,35 +89,41 @@ export function ContactSection() {
                   {contactInfo.map((contact) => {
                     const Icon = contact.icon
                     return (
-                      <div
-                        key={contact.label}
-                        className="flex items-center space-x-4 group cursor-pointer"
-                        onClick={
-                          contact.label === "Phone"
-                            ? handlePhoneClick
-                            : undefined
-                        }
-                      >
-                        <div className="flex-shrink-0">
-                          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                            <Icon className="h-5 w-5 text-primary" />
+                      <div key={contact.label} className="space-y-2">
+                        <div
+                          className="flex items-center space-x-4 group cursor-pointer"
+                          onClick={
+                            contact.label === "Phone" ? handlePhoneClick : undefined
+                          }
+                        >
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                              <Icon className="h-5 w-5 text-primary" />
+                            </div>
+                          </div>
+                          <div>
+                            <p className="text-sm text-muted-foreground">{contact.label}</p>
+                            {contact.href && contact.href !== "#" ? (
+                              <a
+                                href={contact.href}
+                                target={contact.href.startsWith("http") ? "_blank" : undefined}
+                                rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                                className="text-foreground hover:text-primary transition-colors font-medium"
+                              >
+                                {contact.value}
+                              </a>
+                            ) : (
+                              <p className="text-foreground font-medium">{contact.value}</p>
+                            )}
                           </div>
                         </div>
-                        <div>
-                          <p className="text-sm text-muted-foreground">{contact.label}</p>
-                          {contact.href && contact.href !== "#" ? (
-                            <a
-                              href={contact.href}
-                              target={contact.href.startsWith("http") ? "_blank" : undefined}
-                              rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                              className="text-foreground hover:text-primary transition-colors font-medium"
-                            >
-                              {contact.value}
-                            </a>
-                          ) : (
-                            <p className="text-foreground font-medium">{contact.value}</p>
-                          )}
-                        </div>
+
+                        {/* Phone-specific message */}
+                        {contact.label === "Phone" && phoneMessage && (
+                          <p className="ml-14 text-sm text-red-500 font-medium animate-fade-in">
+                            {phoneMessage}
+                          </p>
+                        )}
                       </div>
                     )
                   })}
@@ -135,15 +158,19 @@ export function ContactSection() {
                     </Button>
                   </div>
 
-                  {message && (
+                  {/* Resume-specific message */}
+                  {resumeMessage && (
                     <p className="mt-4 text-sm text-red-500 font-medium text-center animate-fade-in">
-                      {message}
+                      {resumeMessage}
                     </p>
                   )}
 
-                  <div className="pt-6 border-t border-border">
+                  <div className="pt-6 border-t border-border space-y-2">
                     <p className="text-sm text-muted-foreground text-center">
                       💬 Ask me about AWS, Azure, GCP, Docker, Kubernetes, Jenkins, Terraform, Ansible, CI/CD, and monitoring tools
+                    </p>
+                    <p className="text-sm font-medium text-primary text-center">
+                      ✨ Automating today for a faster tomorrow! ✨
                     </p>
                   </div>
                 </div>
