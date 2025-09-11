@@ -28,7 +28,7 @@ Navigation 🧭, Email ✉️, LinkedIn 🔗, GitHub 🐙, Location 📍, and Pr
 
 ## 🎥 Video Demo
 Watch the video showing security implementations and functional testing in action!
-[Portfolio.mp4](https://github.com/YaswanthJemudugani/portfolio/Portfolio.mp4)  
+[Portfolio.mp4](https://github.com/yaswanthjemudugani/Portfolio/blob/main/Portfolio.mp4)  
 
 
 ## 💡 Key Takeaway
