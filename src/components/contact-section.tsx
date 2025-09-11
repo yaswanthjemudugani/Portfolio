@@ -14,13 +14,13 @@ const contactInfo = [
     icon: Phone,
     label: "Phone",
     value: "+91-97037XXXXX",
-    href: null // disable direct click
+    href: null // disabled
   },
   {
     icon: MapPin,
     label: "Location",
     value: "Hyderabad, India",
-    href: "#"
+    href: "https://maps.app.goo.gl/qL1vwWWJcoQcmW8E9"
   },
   {
     icon: Linkedin,
@@ -44,7 +44,7 @@ export function ContactSection() {
     setResumeMessage(
       <>
         📌 As part of security best practices, the resume download feature is disabled. 
-           Please reach out via email only{" "}
+        Please reach out via email only{" "}
         <span
           onClick={() => window.open("mailto:yaswanth.professional@gmail.com", "_blank")}
           className="text-primary font-semibold underline cursor-pointer"
@@ -55,12 +55,11 @@ export function ContactSection() {
     )
   }
 
-
   const handlePhoneClick = () => {
     setPhoneMessage(
       <>
         📌 For security reasons, direct phone number access is disabled. 
-           Please connect with me via email only{" "}
+        Please connect with me via email only{" "}
         <span
           onClick={() => window.open("mailto:yaswanth.professional@gmail.com", "_blank")}
           className="text-primary font-semibold underline cursor-pointer"
@@ -96,7 +95,13 @@ export function ContactSection() {
                         <div
                           className="flex items-center space-x-4 group cursor-pointer"
                           onClick={
-                            contact.label === "Phone" ? handlePhoneClick : undefined
+                            contact.label === "Phone"
+                              ? handlePhoneClick
+                              : contact.label === "Email"
+                              ? () => window.open(contact.href, "_blank")
+                              : contact.label === "Location"
+                              ? () => window.open(contact.href, "_blank")
+                              : undefined
                           }
                         >
                           <div className="flex-shrink-0">
@@ -107,14 +112,20 @@ export function ContactSection() {
                           <div>
                             <p className="text-sm text-muted-foreground">{contact.label}</p>
                             {contact.href && contact.href !== "#" ? (
-                              <a
-                                href={contact.href}
-                                target={contact.href.startsWith("http") ? "_blank" : undefined}
-                                rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                                className="text-foreground hover:text-primary transition-colors font-medium"
-                              >
-                                {contact.value}
-                              </a>
+                              contact.label === "Email" || contact.label === "Location" ? (
+                                <span className="text-foreground hover:text-primary transition-colors font-medium cursor-pointer underline">
+                                  {contact.value}
+                                </span>
+                              ) : (
+                                <a
+                                  href={contact.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-foreground hover:text-primary transition-colors font-medium"
+                                >
+                                  {contact.value}
+                                </a>
+                              )
                             ) : (
                               <p className="text-foreground font-medium">{contact.value}</p>
                             )}
@@ -144,7 +155,7 @@ export function ContactSection() {
                     <Button
                       size="lg"
                       className="w-full shadow-glow"
-                      onClick={() => window.open("mailto:yaswanth.professional@gmail.com")}
+                      onClick={() => window.open("mailto:yaswanth.professional@gmail.com", "_blank")}
                     >
                       <Mail className="mr-2 h-5 w-5" />
                       Send an Email
