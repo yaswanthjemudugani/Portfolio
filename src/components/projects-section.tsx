@@ -28,6 +28,32 @@ const projects = [
       "Applied Cloudflare WAF + CDN for security & performance",
       "Used SonarQube for code quality"
     ]
+  },
+  {
+    title: "Mikimoto",
+    location: "China – Asia",
+    description: "Jewelry E-commerce CMS application deployment on Alibaba Cloud with comprehensive CI/CD automation",
+    technologies: ["Alibaba Cloud", "ECS", "WAF", "LAMP Stack", "Redis", "Opensearch"],
+    achievements: [
+      "Provisioned secure Infra using Virtual Networks, CDN, and WAF",
+      "Deployed Magento application on Alibaba Cloud ECS Servers",
+      "Built CI/CD pipelines with GitLab + Jenkins",
+      "Restricted access from jump - stage - prod - db servers",
+      "Integrated Adobe Cloud Security for website scanning"
+    ]
+  },
+  {
+    title: "Ogilvy NewYork",
+    location: "NewYork City – USA",
+    description: "Digital Advertising Websites deployed using Node.js applications with robust CI/CD workflow",
+    technologies: ["AWS Cloud", "VPN", "EC2", "S3", "RDS", "Node.js", "Cloud Front", "Route 53"],
+    achievements: [
+      "Set up secure infrastructure using CloudFormation Templates on AWS Cloud",
+      "Deployed Node.js application on AWS Cloud EC2 with Docker Containers and RDS",
+      "Integrated CI/CD pipelines with BitBucket + Jenkins",
+      "Configured SSH access via private IPs through VPN connectivity",
+      "Implemented S3 Static Website Hosting with CloudFront and Route 53 DNS"
+    ]
   }
 ]
 
@@ -58,7 +84,6 @@ export function ProjectsSection() {
                       <span>{project.location}</span>
                     </div>
                   </div>
-                  {/* Removed ExternalLink icon here */}
                 </div>
                 <p className="text-muted-foreground mt-3">{project.description}</p>
               </CardHeader>
