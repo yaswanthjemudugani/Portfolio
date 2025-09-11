@@ -8,7 +8,7 @@ const contactInfo = [
     icon: Mail,
     label: "Email",
     value: "yaswanth.professional@gmail.com",
-    href: "mailto:yaswanth.professional@gmail.com"
+    type: "email"
   },
   {
     icon: Phone,
@@ -42,28 +42,31 @@ export function ContactSection() {
 
   const handleDownloadResume = () => {
     setResumeMessage(
-      <>📌 As part of security best practices, the resume download feature is disabled. 
-      Please reach out via email only{" "}
-        <a
-          href="mailto:yaswanth.professional@gmail.com"
-          className="text-primary font-semibold underline"
+      <>
+        📌 As part of security best practices, the resume download feature is disabled. 
+           Please reach out via email only{" "}
+        <span
+          onClick={() => window.open("mailto:yaswanth.professional@gmail.com", "_blank")}
+          className="text-primary font-semibold underline cursor-pointer"
         >
           yaswanth.professional@gmail.com
-        </a>
+        </span>
       </>
     )
   }
 
+
   const handlePhoneClick = () => {
     setPhoneMessage(
-      <>📌 For security reasons, direct phone number access is disabled. 
-      Please connect with me via email only{" "}
-        <a
-          href="mailto:yaswanth.professional@gmail.com"
-          className="text-primary font-semibold underline"
+      <>
+        📌 For security reasons, direct phone number access is disabled. 
+           Please connect with me via email only{" "}
+        <span
+          onClick={() => window.open("mailto:yaswanth.professional@gmail.com", "_blank")}
+          className="text-primary font-semibold underline cursor-pointer"
         >
           yaswanth.professional@gmail.com
-        </a>
+        </span>
       </>
     )
   }
