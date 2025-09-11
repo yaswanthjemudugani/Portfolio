@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Globe, MapPin } from "lucide-react"
+import { Globe } from "lucide-react"
 
 const projects = [
   {
@@ -58,7 +58,7 @@ export function ProjectsSection() {
                       <span>{project.location}</span>
                     </div>
                   </div>
-                  <ExternalLink className="h-5 w-5 text-muted-foreground" />
+                  {/* Removed ExternalLink icon here */}
                 </div>
                 <p className="text-muted-foreground mt-3">{project.description}</p>
               </CardHeader>
