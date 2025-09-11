@@ -4,7 +4,7 @@ import { Mail, Linkedin, Github, Download } from "lucide-react"
 
 // const yaswanthProfile = "/lovable-uploads/210041f1-4e3f-4bd5-ba65-e0ef59a44fb8.png"
 
-const yaswanthProfile = "/src/assets/Yaswanth-Image.jpg"
+const yaswanthProfile = "/assets/Yaswanth-Image.jpg"
 
 
 export function HeroSection() {
