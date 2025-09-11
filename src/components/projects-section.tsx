@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Bursa Bull Charge",
     location: "Malaysia – Asia",
-    description: "Next.js & Node.js application deployment on EKS with comprehensive CI/CD automation",
+    description: "Marathon Application deployed using Next.js & Node.js on EKS with comprehensive CI/CD automation",
     technologies: ["AWS CloudFormation", "GitLab", "Jenkins", "Docker", "EKS", "SonarQube"],
     achievements: [
       "Deployed Next.js & Node.js apps on EKS (Fargate)",
@@ -19,7 +19,7 @@ const projects = [
   {
     title: "VetsMedicover",
     location: "London – UK",
-    description: "Healthcare application infrastructure on Azure with robust security and performance optimization",
+    description: " Pets Insurance healthcare application deployed using LAMP Stack on Azure with robust security and performance optimization",
     technologies: ["Azure", "Linux VM", "Jenkins", "GitLab", "Cloudflare", "Apache", "MySQL"],
     achievements: [
       "Hosted apps on Azure Linux VMs with Apache",
