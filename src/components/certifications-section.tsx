@@ -7,6 +7,7 @@ const certifications = [
     title: "Google Cloud Certified: Associate Cloud Engineer",
     issuer: "Google Cloud",
     color: "bg-blue-500/10 text-blue-600 border-blue-500/20",
+    href: "https://www.credly.com/badges/3126b149-11a2-4a4f-9837-97cbfb6acf10",
     icon: "🏆"
   },
   {
