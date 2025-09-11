@@ -32,8 +32,8 @@ const projects = [
   {
     title: "Mikimoto",
     location: "China – Asia",
-    description: "Jewelry E-commerce CMS application deployment on Alibaba Cloud with comprehensive CI/CD automation",
-    technologies: ["Alibaba Cloud", "ECS", "WAF", "LAMP Stack", "Redis", "Opensearch"],
+    description: "Jewellery E-commerce application deployment on Alibaba Cloud with comprehensive CI/CD automation",
+    technologies: ["Alibaba Cloud", "ECS", "CMS", "WAF", "LAMP Stack", "Redis", "Opensearch"],
     achievements: [
       "Provisioned secure Infra using Virtual Networks, CDN, and WAF",
       "Deployed Magento application on Alibaba Cloud ECS Servers",
