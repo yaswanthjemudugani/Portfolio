@@ -14,7 +14,7 @@ export function HeroSection() {
     setResumeMessage(
       <>
         📌 As part of security best practices, the resume download feature is disabled. 
-        Please reach out via email only{" "}
+           Please reach out via email only{" "}
         <span
           onClick={() => window.open("mailto:yaswanth.professional@gmail.com", "_blank")}
           className="text-primary font-semibold underline cursor-pointer"
