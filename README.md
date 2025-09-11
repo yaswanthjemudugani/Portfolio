@@ -28,6 +28,8 @@ Navigation 🧭, Email ✉️, LinkedIn 🔗, GitHub 🐙, Location 📍, and Pr
 
 ## 🎥 Video Demo
 Watch the video showing security implementations and functional testing in action!
+[Portfolio.mp4](https://github.com/YaswanthJemudugani/portfolio/Portfolio.mp4)  
+
 
 ## 💡 Key Takeaway
 This project demonstrates my ability to execute the full lifecycle solo — combining **DevOps**, **full-stack skills**, and **secure web deployment**.
