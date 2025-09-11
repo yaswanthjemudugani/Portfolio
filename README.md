@@ -1,73 +1,37 @@
-# Welcome to your Lovable project
+# My Personal Portfolio Website 🚀
 
-## Project info
+Excited to launch my personal portfolio website!  
+👉 [https://yaswanthjemudugani.vercel.app](https://yaswanthjemudugani.vercel.app)
 
-**URL**: https://lovable.dev/projects/47e92bf4-3820-475a-bb91-d2d41e09be20
+Built **end-to-end independently** — planning, design, coding, testing, and deployment — following **DevOps** and **industry security best practices**.
 
-## How can I edit this code?
+## 💻 Tech & Tools Used
+- **lovable.dev** 🤖 – Generated initial code  
+- **GitHub** 🐙 – Version control & repo integration  
+- **vercel.com** ☁️ – Automatic deployments & custom domain  
+- **CI/CD** 🔄 – Full automation from code to deployment  
+- **React** ⚛️ – Frontend framework  
+- **TypeScript** 📝 – Type-safe coding  
+- **Tailwind CSS** 🎨 – Styling & responsive design  
 
-There are several ways of editing your application.
+## 🛡 Security Best Practices Implemented
+- Resume download disabled 📄❌  
+- Phone number hidden 📵❌  
+- Contact only via email ✉️ ✔️  
 
-**Use Lovable**
+## 🔗 GitHub Code
+Check out the full code on GitHub: [https://github.com/YaswanthJemudugani/portfolio](https://github.com/YaswanthJemudugani/portfolio) ✅
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/47e92bf4-3820-475a-bb91-d2d41e09be20) and start prompting.
+## ✅ Functional Testing
+Fully tested all backend integrations:  
+Navigation 🧭, Email ✉️, LinkedIn 🔗, GitHub 🐙, Location 📍, and Professional Certificates 🏅 Buttons & their redirections.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎥 Video Demo
+Watch the video showing security implementations and functional testing in action!
 
-**Use your preferred IDE**
+## 💡 Key Takeaway
+This project demonstrates my ability to execute the full lifecycle solo — combining **DevOps**, **full-stack skills**, and **secure web deployment**.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/47e92bf4-3820-475a-bb91-d2d41e09be20) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Special thanks to Lovable, Vercel, and GitHub ❤️**
