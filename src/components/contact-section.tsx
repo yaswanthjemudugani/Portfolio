@@ -20,7 +20,7 @@ const contactInfo = [
     icon: MapPin,
     label: "Location",
     value: "Hyderabad, India",
-    href: "https://maps.app.goo.gl/qL1vwWWJcoQcmW8E9"
+    href: "https://maps.app.goo.gl/vSvZZ1r8AQdYW8qh8"
   },
   {
     icon: Linkedin,
